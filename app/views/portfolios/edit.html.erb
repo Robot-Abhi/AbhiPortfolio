@@ -8,9 +8,24 @@
 
   <div class="field">
     <%= form.label :subtitle %>
-    <%= form.text_area :subtitle %>
+    <%= form.text_area :subtitle, cols: 40, rows: 3 %>
   </div>
-subtitle
+
+  <div class="body">
+    <%= form.label :body %>
+    <%= form.text_area :body, cols: 60, rows: 6  %>
+  </div>
+
+  <div class="field">
+    <%= form.label :main_image %>
+    <%= form.text_field :main_image, size: 40 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :thumb_image %>
+    <%= form.text_field :thumb_image, size: 40 %>
+  </div>
+
   <div class="actions">
     <%= form.submit %>
   </div>
