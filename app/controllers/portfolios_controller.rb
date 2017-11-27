@@ -50,8 +50,8 @@ class PortfoliosController < ApplicationController
   def destroy
     @portfolio_item = Portfolio.find(params[:id])
 
-    @portfolio_item.destroy
     respond_to do |format|
+      @portfolio_item.destroy
       format.html { redirect_to portfolios_url, notice: 'Blog was successfully destroyed.' }
      end
   end
