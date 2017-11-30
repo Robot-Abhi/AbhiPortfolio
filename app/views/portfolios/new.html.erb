@@ -1,0 +1,41 @@
+<h1>Create a new Portfolio Item</h1>
+
+<%= form_for(@portfolio_item) do |form| %>
+  <div class="field">
+    <%= form.label :title %>
+    <%= form.text_field :title %>
+  </div>
+
+  <div class="field">
+    <%= form.label :subtitle %>
+    <%= form.text_area :subtitle, cols: 40, rows: 3 %>
+  </div>
+
+  <div class="body">
+    <%= form.label :body %>
+    <%= form.text_area :body, cols: 60, rows: 6  %>
+  </div>
+
+  <div class="field">
+    <%= form.label :main_image %>
+    <%= form.text_field :main_image, size: 40 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :thumb_image %>
+    <%= form.text_field :thumb_image, size: 40 %>
+  </div>
+
+  <ul>
+    <%= form .fields_for :technologies do |technology_form| %>
+      <li>
+      <%= technology_form.label :name %>
+      <%= technology_form.text_field :name %>
+    </li>
+    <% end %>
+  </ul>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

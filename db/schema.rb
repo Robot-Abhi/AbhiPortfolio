@@ -10,7 +10,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 20171126064614) do
+=======
+ActiveRecord::Schema.define(version: 20171130155023) do
+>>>>>>> resource-generator
 
   create_table "blogs", force: :cascade do |t|
     t.string "title"

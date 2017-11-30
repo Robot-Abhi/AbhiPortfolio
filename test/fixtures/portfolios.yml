@@ -3,13 +3,13 @@
 one:
   title: MyString
   subtitle: MyString
-  bod: MyText
+  body: MyText
   main_image: MyText
   thumb_image: MyText
 
 two:
   title: MyString
   subtitle: MyString
-  bod: MyText
+  body: MyText
   main_image: MyText
   thumb_image: MyText
