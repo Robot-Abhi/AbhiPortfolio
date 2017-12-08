@@ -3,7 +3,7 @@ class CreatePortfolios < ActiveRecord::Migration[5.1]
     create_table :portfolios do |t|
       t.string :title
       t.string :subtitle
-      t.text :body
+      t.text :bod
       t.text :main_image
       t.text :thumb_image
 
