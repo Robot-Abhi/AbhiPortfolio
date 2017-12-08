@@ -1,5 +1,25 @@
 <h1>Create a new Portfolio Item</h1>
 
+<<<<<<< HEAD
+<%= form_for(@portfolio_items) do |f| %>
+  <div class="field">
+    <%= f.label :title %>
+    <%= f.text_field :title %>
+  </div>
+
+   <div class="field">
+    <%= f.label :subtitle %>
+    <%= f.text_area :subtitle %>
+  </div>
+
+  <div class="field">
+    <%= f.label :body %>
+    <%= f.text_area :body %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+=======
 <%= form_for(@portfolio_item) do |form| %>
   <div class="field">
     <%= form.label :title %>
@@ -37,5 +57,6 @@
 
   <div class="actions">
     <%= form.submit %>
+>>>>>>> master
   </div>
 <% end %>
